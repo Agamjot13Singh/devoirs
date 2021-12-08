@@ -32,42 +32,54 @@ class HomeBookWidget extends StatelessWidget {
       ),
       child: GestureDetector(
         onTap: () {},
-        child: AnimatedContainer(
-          child: Padding(
-            padding: const EdgeInsets.only(left: 20),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: [
-                Image.network(
-                  imgSubj,
-                  width: 70,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(right: 20),
-                  child: Text(
-                    textSubj,
-                    style: GoogleFonts.varela(fontSize: 18),
+        child: PhysicalModel(
+          color: Colors.transparent,
+          borderRadius: BorderRadius.circular(10),
+          shape: BoxShape.rectangle,
+          shadowColor: Color.fromARGB(255, 200, 200, 200),
+          elevation: 6,
+          child: AnimatedContainer(
+            child: Padding(
+              padding: const EdgeInsets.only(left: 20),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  Image.asset(
+                    imgSubj,
+                    width: 70,
                   ),
-                )
-              ],
+                  Padding(
+                    padding: const EdgeInsets.only(right: 20),
+                    child: Text(
+                      textSubj,
+                      style: GoogleFonts.varela(
+                        fontSize: 18,
+                        color: Colors.white,
+                      ),
+                    ),
+                  )
+                ],
+              ),
             ),
+            duration: const Duration(seconds: 2),
+            curve: Curves.fastOutSlowIn,
+            decoration: BoxDecoration(
+              // gradient: LinearGradient(colors: [_randomColor2, _randomColor1]),
+
+              // f
+              color: Color.fromARGB(255, 180, 176, 233),
+              borderRadius: BorderRadius.circular(15),
+              // boxShadow: [
+              //   BoxShadow(
+              //     color: Color.fromARGB(255, 190, 189, 189),
+              //     spreadRadius: 1,
+              //     blurRadius: 1,
+              //   )
+              // ],
+            ),
+            width: 180,
+            padding: EdgeInsets.only(top: 20, bottom: 20),
           ),
-          duration: const Duration(seconds: 2),
-          curve: Curves.fastOutSlowIn,
-          decoration: BoxDecoration(
-            gradient: LinearGradient(colors: [_randomColor2, _randomColor1]),
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(15),
-            boxShadow: [
-              BoxShadow(
-                color: Colors.grey,
-                spreadRadius: 1,
-                blurRadius: 1,
-              )
-            ],
-          ),
-          width: 180,
-          padding: EdgeInsets.only(top: 20, bottom: 20),
         ),
       ),
     );

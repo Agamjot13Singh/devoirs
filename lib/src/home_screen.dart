@@ -58,8 +58,10 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(
-        child: HomeScreenAll(),
+      body: SafeArea(
+        child: SingleChildScrollView(
+          child: HomeScreenAll(),
+        ),
       ),
     );
   }

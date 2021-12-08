@@ -13,19 +13,45 @@ class _HomeScreenSecState extends State<HomeScreenSec> {
   Widget build(BuildContext context) {
     return Wrap(
       direction: Axis.horizontal,
+      spacing: 13,
+      runSpacing: 2,
       alignment: WrapAlignment.end,
       children: [
         HomeBookWidget(
           'Biology',
-          'https://images.unsplash.com/photo-1610987039121-d70917dcc6f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbHBhcGVyJTIwZm9yJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+          'assets/coffee.jpg',
+        ),
+        HomeBookWidget(
+          'History \n Civics',
+          'assets/coffee.jpg',
         ),
         HomeBookWidget(
           'Biology',
-          'https://images.unsplash.com/photo-1610987039121-d70917dcc6f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbHBhcGVyJTIwZm9yJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+          'assets/coffee.jpg',
         ),
         HomeBookWidget(
           'Biology',
-          'https://images.unsplash.com/photo-1610987039121-d70917dcc6f6?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2FsbHBhcGVyJTIwZm9yJTIwbW9iaWxlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80',
+          'assets/coffee.jpg',
+        ),
+        HomeBookWidget(
+          'Biology',
+          'assets/coffee.jpg',
+        ),
+        HomeBookWidget(
+          'Biology',
+          'assets/coffee.jpg',
+        ),
+        HomeBookWidget(
+          'Biology',
+          'assets/coffee.jpg',
+        ),
+        HomeBookWidget(
+          'Biology',
+          'assets/coffee.jpg',
+        ),
+        HomeBookWidget(
+          'Biology',
+          'assets/coffee.jpg',
         ),
       ],
     );
