@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "406878037898",
+    "project_id": "devoirs-868ae",
+    "storage_bucket": "devoirs-868ae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:406878037898:android:014f6b934f432bd7b08a73",
+        "android_client_info": {
+          "package_name": "com.agamjot.devoirs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "406878037898-jdc28kkos62gue5ng5q7gpls6e280ovr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCBzuixmNI9MFrBuu7GfdKE-1PvzefS_sI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "406878037898-jdc28kkos62gue5ng5q7gpls6e280ovr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
