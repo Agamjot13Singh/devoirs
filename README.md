@@ -1,16 +1,13 @@
-# devoirs
+# Devoirs
 
-A new Flutter project.
+It's a personal project that will help my class mates copy the homework and classwork that they were missing or didn't understood.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+Just install the file
 
-A few resources to get you started if this is your first Flutter project:
+First make sure you have flutter sdk installed on your machine, if you don't you can download it from here
+- Official flutter download page https://docs.flutter.dev/get-started/install
+If you already have flutter in your machine just dowload the file or clone it. Installed? Open pubspec.yaml in the root directory of the project(folder) then hit ctrl+s on windows and cmd + s on mac and it will be ready to go! What it will do is that it will resolve all the errors you were facing.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Done these steps? Enjoy!
