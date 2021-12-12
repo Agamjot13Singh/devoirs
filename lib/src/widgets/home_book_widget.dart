@@ -7,7 +7,10 @@ class HomeBookWidget extends StatelessWidget {
 
   String textSubj;
   String imgSubj;
-  HomeBookWidget(this.textSubj, this.imgSubj);
+  HomeBookWidget(
+    this.textSubj,
+    this.imgSubj,
+  );
 
   @override
   Widget build(BuildContext context) {
@@ -50,11 +53,15 @@ class HomeBookWidget extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.only(right: 20),
-                    child: Text(
-                      textSubj,
-                      style: GoogleFonts.varela(
-                        fontSize: 18,
-                        color: Colors.white,
+                    child: FittedBox(
+                      fit: BoxFit.fill,
+                      alignment: Alignment.center,
+                      child: Text(
+                        textSubj,
+                        style: GoogleFonts.varela(
+                          // fontSize: 15,
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   )
@@ -66,8 +73,10 @@ class HomeBookWidget extends StatelessWidget {
             decoration: BoxDecoration(
               // gradient: LinearGradient(colors: [_randomColor2, _randomColor1]),
 
+              // color: Color.fromARGB(255, 180, 176, 233),
+              // color: Color(0xfffF9968B), - Peach
               // f
-              color: Color.fromARGB(255, 180, 176, 233),
+              color: Color(0xfff5763E9),
               borderRadius: BorderRadius.circular(15),
               // boxShadow: [
               //   BoxShadow(
@@ -78,6 +87,7 @@ class HomeBookWidget extends StatelessWidget {
               // ],
             ),
             width: 180,
+            height: 140,
             padding: EdgeInsets.only(top: 20, bottom: 20),
           ),
         ),

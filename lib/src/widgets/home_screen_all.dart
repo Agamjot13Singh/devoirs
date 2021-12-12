@@ -13,7 +13,7 @@ class _HomeScreenAllState extends State<HomeScreenAll> {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [HomeScreenTop(), HomeScreenSec()],
+      children: [HomeScreenTop(), HomeScreenCards()],
     );
   }
 }

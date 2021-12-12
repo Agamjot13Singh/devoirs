@@ -1,14 +1,14 @@
 import 'package:devoirs/src/widgets/home_book_widget.dart';
 import 'package:flutter/material.dart';
 
-class HomeScreenSec extends StatefulWidget {
-  const HomeScreenSec({Key? key}) : super(key: key);
+class HomeScreenCards extends StatefulWidget {
+  const HomeScreenCards({Key? key}) : super(key: key);
 
   @override
   _HomeScreenSecState createState() => _HomeScreenSecState();
 }
 
-class _HomeScreenSecState extends State<HomeScreenSec> {
+class _HomeScreenSecState extends State<HomeScreenCards> {
   @override
   Widget build(BuildContext context) {
     return Wrap(
@@ -19,39 +19,19 @@ class _HomeScreenSecState extends State<HomeScreenSec> {
       children: [
         HomeBookWidget(
           'Biology',
-          'assets/coffee.jpg',
+          'assets/biology.jpg',
         ),
         HomeBookWidget(
-          'History \n Civics',
-          'assets/coffee.jpg',
+          'History\nCivics',
+          'assets/history-civivs.jpeg',
         ),
         HomeBookWidget(
-          'Biology',
-          'assets/coffee.jpg',
+          'English\nLitreature',
+          'assets/english-lit.jpg',
         ),
         HomeBookWidget(
-          'Biology',
-          'assets/coffee.jpg',
-        ),
-        HomeBookWidget(
-          'Biology',
-          'assets/coffee.jpg',
-        ),
-        HomeBookWidget(
-          'Biology',
-          'assets/coffee.jpg',
-        ),
-        HomeBookWidget(
-          'Biology',
-          'assets/coffee.jpg',
-        ),
-        HomeBookWidget(
-          'Biology',
-          'assets/coffee.jpg',
-        ),
-        HomeBookWidget(
-          'Biology',
-          'assets/coffee.jpg',
+          'Chemistry',
+          'assets/chemistry.jpg',
         ),
       ],
     );

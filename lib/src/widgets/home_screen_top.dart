@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -17,75 +18,88 @@ class _HomeScreenTopState extends State<HomeScreenTop> {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
-          // ? Settings Icon Widget
-
+          // ! Settings Icon Widget
           Row(
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
-              Container(
-                child: Icon(
-                  Icons.settings,
-                  size: 40,
-                  color: Color(0xff7B7D85),
-                ),
-                decoration: BoxDecoration(
-                  color: Colors.transparent,
-                  borderRadius: BorderRadius.circular(10),
+              GestureDetector(
+                onTap: () {
+                  print('CLicked');
+                },
+                child: Container(
+                  child: Image.asset(
+                    'assets/menu.png',
+                    width: 35,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Colors.transparent,
+                    borderRadius: BorderRadius.circular(10),
+                  ),
                 ),
               ),
 
               // ? Profile Pic Widget
 
               Icon(
-                Icons.account_circle,
+                CupertinoIcons.profile_circled,
                 size: 40,
-              ),
+                color: Colors.white,
+              )
             ],
           ),
 
           Padding(
             padding: const EdgeInsets.only(top: 15),
-            child: Text(
-              'Discover',
-              style:
-                  GoogleFonts.varela(fontSize: 36, fontWeight: FontWeight.w600),
-            ),
+            child: Text('Discover',
+                style: GoogleFonts.varela(
+                  fontSize: 36,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.white,
+                )),
           ),
 
           //  ! STARTING SEARCH BAR WIDGET
 
-          Padding(
-            padding: const EdgeInsets.only(top: 20),
-            child: Container(
-                child: Padding(
-                  padding: const EdgeInsets.only(left: 20),
-                  child: TextField(
-                    decoration: InputDecoration(
-                      hintText: 'Search for "Chemistry"',
-                      fillColor: Colors.white,
-                      hintStyle: TextStyle(
-                        color: Color(0xfffaaa5a5),
-                        fontSize: 18,
+          PhysicalModel(
+            color: Colors.transparent,
+            borderRadius: BorderRadius.circular(10),
+            shape: BoxShape.circle,
+            shadowColor: Color.fromARGB(255, 200, 200, 200),
+            elevation: 20,
+            child: Padding(
+              padding: const EdgeInsets.only(top: 20),
+              child: Container(
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: TextField(
+                      decoration: InputDecoration(
+                        hintText: 'Search for "Chemistry"',
+                        fillColor: Colors.white,
+                        hintStyle: TextStyle(
+                          color: Color(0xfffaaa5a5),
+                          fontSize: 18,
+                        ),
+                        suffixIcon: Icon(Icons.search),
+                        border: InputBorder.none,
                       ),
-                      suffixIcon: Icon(Icons.search),
-                      border: InputBorder.none,
-                    ),
-                    style: TextStyle(
-                      color: Colors.white,
+                      style: TextStyle(
+                        color: Colors.black,
+                      ),
                     ),
                   ),
-                ),
-                decoration: BoxDecoration(
+                  decoration: BoxDecoration(
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(10),
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey.withOpacity(0.5),
-                        spreadRadius: 7,
-                        blurRadius: 7,
-                        offset: Offset(0, 4), // changes position of shadow
-                      ),
-                    ])),
+                    // boxShadow: [
+                    //   BoxShadow(
+                    //     color: Colors.grey.withOpacity(0.5),
+                    //     spreadRadius: 7,
+                    //     blurRadius: 7,
+                    //     offset: Offset(0, 4), // changes position of shadow
+                    //   ),
+                    // ]
+                  )),
+            ),
           ),
           // ! STARTING OF BOOK WIDGET
           Divider(
